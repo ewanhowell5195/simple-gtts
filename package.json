@@ -1,0 +1,27 @@
+{
+  "name": "simple-gtts",
+  "version": "1.0.0",
+  "description": "Simple Google text to speech",
+  "type": "module",
+  "export": "index.js",
+  "author": "Ewan Howell",
+  "license": "MIT",
+  "dependencies": {
+    "fake-useragent": "^1.0.1",
+    "node-fetch": "^3.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ewanhowell5195/simple-gtts.git"
+  },
+  "keywords": [
+    "node",
+    "tts",
+    "text-to-speech",
+    "google",
+    "speak",
+    "voice",
+    "read",
+    "text"
+  ]
+}
