@@ -3,7 +3,7 @@
 ### Simple Google text to speech
 
 ```js
-gTTS("hello there", {
+await gTTS("hello there", {
   lang: "en-us",
   path: "./hello.mp3"
 })
@@ -28,7 +28,7 @@ gTTS turns text into speech, and can output either a file or a buffer
 ### file
 ```js
 // Include a path to save to a file
-gTTS("hello there", {
+await gTTS("hello there", {
   path: "./hello.mp3"
 })
 ```
@@ -36,7 +36,7 @@ gTTS("hello there", {
 ### buffer
 ```js
 // Not including a path will return a buffer
-const buff = gTTS("hello there")
+const buff = await gTTS("hello there")
 ```
 
 ## languages
@@ -45,7 +45,7 @@ You can change the language the text is read in ny providing a language code
 
 ```js
 // Languages work with both files and buffers
-gTTS("hello there", {
+await gTTS("hello there", {
   lang: "fr",
   path: "./hello.mp3"
 })
