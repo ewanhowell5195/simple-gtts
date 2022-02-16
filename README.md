@@ -41,7 +41,7 @@ const buff = await gTTS("hello there")
 
 ## languages
 
-You can change the language the text is read in ny providing a language code
+You can change the language the text is read in by providing a language code
 
 ```js
 // Languages work with both files and buffers
