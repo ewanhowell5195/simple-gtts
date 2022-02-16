@@ -62,7 +62,7 @@ export const gTTS = async (text, data = {}) => {
   data.lang = data.lang.toLowerCase()
   if(!text) throw new Error("No text to speak")
   if(!languages[data.lang]) throw new Error(`Language not supported: ${data.lang}`)
-  const parts = text.match(/[\s\S]{1,100}(?!\S)/g).map(e => e.trim())
+  const parts = text.match(/[\s\S]{1,100}(?!\S)|[\s\S]{1,100}/g).map(e => e.trim())
   const buff = Buffer.concat(await Promise.all(parts.map((e, i) => fetch(base + `?ie=UTF-8&tl=${data.lang}&q=${encodeURIComponent(e)}&total=${e.length}&idx=${i}&client=tw-ob&textlen=${e.length}`, {
     headers: {
       "User-Agent": fakeUa()
