@@ -27,6 +27,7 @@ export const languages = {
   de: "German",
   el: "Greek",
   ht: "Haitian Creole",
+  iw: "Hebrew",
   hi: "Hindi",
   hu: "Hungarian",
   is: "Icelandic",
@@ -53,8 +54,7 @@ export const languages = {
   ta: "Tamil",
   th: "Thai",
   tr: "Turkish",
-  vi: "Vietnamese",
-  cy: "Welsh",
+  vi: "Vietnamese"
 }
 
 export const gTTS = async (text, data = {}) => {
