@@ -27,7 +27,7 @@ export const languages = {
   de: "German",
   el: "Greek",
   ht: "Haitian Creole",
-  iw: "Hebrew",
+  he: "Hebrew",
   hi: "Hindi",
   hu: "Hungarian",
   is: "Icelandic",

@@ -16,7 +16,7 @@ $ npm i simple-gtts
 
 ## Usage
 ```js
-import {gTTS} from "simple-gtts"
+import { gTTS } from "simple-gtts"
 ```
 
 ---
